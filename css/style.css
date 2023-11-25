@@ -7,6 +7,12 @@
 body{
 	background: #192131!important;
 }
+@font-face{
+	font-family: 'GillSansNova-Bold';
+	src:url(../font/GillSansNova-Bold.ttf);
+	font-style: normal;
+	font-weight: 900;
+}
 ul li{
 	list-style: none;
 }
@@ -21,11 +27,11 @@ li{
 }
 h1{
 	font-size: 60px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'GillSansNova-Bold';
 }
 h2{
 	font-size: 44px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'GillSansNova-Bold';
 }
 
 p{
