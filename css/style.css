@@ -1,18 +1,14 @@
+@import url("../fonts/stylesheet.css");
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Gill Sans Nova';
 }
 body{
 	background: #192131!important;
 }
-@font-face{
-	font-family: 'GillSansNova-Bold';
-	src:url(../font/GillSansNova-Bold.ttf);
-	font-style: normal;
-	font-weight: 900;
-}
+
 ul li{
 	list-style: none;
 }
@@ -27,7 +23,7 @@ li{
 }
 h1{
 	font-size: 60px;
-	font-family: 'GillSansNova-Bold';
+	font-family: 'Gill Sans Nova';
 }
 h2{
 	font-size: 44px;
@@ -68,9 +64,8 @@ p{
 	z-index: 1;
 }
 .navbar{
-	background:#192131;
-	box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.12);
-}
+	background:#0e013b;
+}	
 
 .navbar-nav{
 	display: flex;
@@ -79,19 +74,23 @@ p{
 	
 }
 .nav-item{
-	padding: 0 15px;
+	padding-left: 20px;
 	
 }
 .nav-item a{
 	color: #fff;
-	transition: .4s ease;
-	font-weight: 600;
-	font-family: 'Poppins', sans-serif;
- 	
+	transition: .4s ease;	
 }
 .nav-item a:hover{
 	color: #252c3a;
-	
+}
+
+.navbar-brand{
+	color: white;
+    font-family: 'Gill Sans Nova';
+    font-weight: 250;
+    font-style: normal;
+	font-size: 32px!important;
 }
 
 .navbar-toggler-icon{
@@ -100,40 +99,43 @@ p{
 }
 .button-menu{
 	display: flex;
-	border-radius: 10px;
 	padding: 7px 18px;
 	background: #EAC14B;
 	margin-left: 15px;
 }
 .button-menu a{
-	color: #192131;
+	color: #0e013b;
 	font-size: 15px;
 }
 .button-menu a img{
 	margin-right: 5px;
 	padding-right: 10px;
-	border-right: 1px #1921312a solid ;
+	border-right: 1px #0e013b solid ;
 }
 .hero{
-	background: #192131;
+	background: #0e013b;
 	width: 100%;
 	padding: 130px 0 100px;
 }
 .hero h1{
-	font-weight: 700;
 	color: #FFF;
+	font-size: 55px;
 	
 }
-.hero h1 span{
-	font-weight: 700;
-	color: #D09333;
-	font-family: 'Poppins', sans-serif;
-	
+.hero-content ul li{
+	color: #fff;
+	font-size: 22px;
+	margin-bottom: 7px;
 }
-.hero p{
+.hero-content ul li span{
+
+	margin-right: 8px;
+}
+.hero-content p{
 	color: #FFF;
 	font-size: 20px;
-	margin-bottom: 10px;
+	font-weight: 200;
+	font-family: 'Gill Sans Nova';
 }
 .fit-image img{
 	width: 100%;
@@ -148,10 +150,9 @@ p{
 	padding-right: 10px;
 }
 .gobal-btn a{
-	font-family: 'Poppins', sans-serif;
-	border-radius: 10px;
+	
 	padding: 13px 48px;
-	background: #EAC14B;
+	background: #d09332;
 	color: #192131;
 	font-size: 15px;
 	font-weight: 700;
@@ -243,7 +244,7 @@ p{
 }
 .center-title h2 span{
 	color: #D09333;
-	font-family: 'Poppins', sans-serif;
+	
 	font-weight: 700;
 }
 .center-title p{
@@ -270,12 +271,12 @@ p{
 }
 .property-letting-content h2{
 	color: #FFF;
-	font-family: 'Poppins', sans-serif;
+	
 	font-weight: 700;
 }
 .property-letting-content h2 span{
 	color: #D09333;
-	font-family: 'Poppins', sans-serif;
+	
 	font-weight: 700;
 }
 .property-letting-content p{
@@ -297,7 +298,7 @@ p{
 	margin-top: -90px;
 }
 .white-icon-box  h4{
-	font-family: 'Poppins', sans-serif;
+	
 	font-weight: 700;
 	color: #192131;
 	margin-bottom: 0;
