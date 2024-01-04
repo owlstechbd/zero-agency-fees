@@ -1,3 +1,78 @@
+@media (min-width: 1200px) and (max-width: 1400px){
+
+    .step-box::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 42px;
+        background: url(../images/step-arrow.png) center center;
+        right: -19%;
+        background-size: cover;
+        top: 50%;
+        transform: translate(10px, -50%);
+    }
+    .step-box{
+        width: 28%;
+    }
+}
+@media (min-width: 721px) and (max-width: 1199px){
+    .process-box{
+        flex-direction: column;
+    }
+    .step-box{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .step-box::after{
+        display: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .price-calcluter {
+        position: absolute;
+        width: 195px;
+        height: 501px;
+        top: 39px;
+        left: 80px;
+    }
+    .slidecontainer {
+        width: 100%;
+        padding: 33px 10px 20px;
+    }
+    .poperty-image img{
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .price-calcluter {
+        position: absolute;
+        width: 289px;
+        height: 501px;
+        top: 70px;
+        left: 118px;
+    }
+    .slidecontainer {
+        width: 100%;
+        padding: 150px 10px 20px;
+    }
+}
+@media screen and (max-width: 767px){
+    .price-calcluter {
+        position: absolute;
+        width: 165px;
+        height: 501px;
+        top: 31px;
+        left: 69px;
+    }
+    .slidecontainer {
+        width: 100%;
+        padding: 12px 7px;
+    }
+    .slidecontainer p{
+        font-size: 13px;
+    }
+}
 @media screen and (max-width: 720px){
 
 
@@ -10,6 +85,159 @@
     .geeks img{
         width: 70%;
     }
+    .choose-box{
+        padding: 0;
+    }
+    .logo-partner ul{
+        flex-wrap: wrap;
+    }
+    .logo-partner ul li{
+        margin: 10px;
+    }
+    .navbar-brand{
+        font-size: 20px!important;
+    }
+    .navbar-toggler-icon {
+        color: #ffffff;
+    }
+    .hero h1 {
+        font-size: 35px;
+    }
+    .testmonail{
+        margin-bottom: 40px;
+    }
+    .section-padding{
+        padding: 50px 0;
+    }
+    .process-box{
+        flex-direction: column;
+    }
+    .step-box{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .process {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .call-box{
+        padding: 30px;
+    }
+    .cal-to-action{
+        padding: 50px 0;
+    }
+    .footer-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .footer-list {
+        padding-left: 0;
+    }
+    .footer-bottom-box ul{
+        flex-wrap: wrap;
+    }
+    .footer-bottom-box ul li{
+        padding: 10px 20px;
+    }
+    .step-box::after{
+        display: none;
+    }
+    .poperty-image img{
+        width: 100%;
+    }
 
 }
 
+@media screen and (max-width: 430px){
+    #questions {
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+    #current-time {
+        margin-left: 9px;
+        background: #81C488;
+        display: inline-block;
+        color: #fff;
+        padding: 1px 10px;
+        border-radius: 25px;
+        font-size: 10px;
+    }
+    .price-calcluter {
+        position: absolute;
+        width: 179px;
+        height: 501px;
+        top: 31px;
+        left: 69px;
+    }
+    .dropdown {
+        width: 100%;
+        font-family: 'Gill Sans Nova';
+        font-weight: 300;
+        font-size: 14px;
+        margin-bottom: 8px;
+        background-color: gainsboro;
+        border-color: gainsboro;
+        padding: 4px;
+        border-radius: 6px;
+    }
+    #suprise {
+        margin-left: 32px;
+        margin-top: -11px;
+        width: 107px;
+        z-index: 1;
+    }
+    .submit-btn input {
+        padding: 5px 28px;
+        background: #D09332;
+        border: 1.8px #D09332 solid;
+        color: #fff;
+        border: none;
+        margin-left: 18px;
+        transition: .6s;
+        border-radius: 4px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 390px){
+    .price-calcluter {
+        position: absolute;
+        width: 179px;
+        height: 501px;
+        top: 27px;
+        left: 61px;
+    }
+    .dropdown {
+        width: 90%;
+        font-family: 'Gill Sans Nova';
+        font-weight: 300;
+        font-size: 14px;
+        margin-bottom: 8px;
+        background-color: gainsboro;
+        border-color: gainsboro;
+        padding: 4px;
+        border-radius: 6px;
+    }
+    .slider {
+        -webkit-appearance: none;
+        width: 90%;
+        height: 15px;
+        border-radius: 5px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+    #suprise {
+        display: none;
+    }
+    .submit-btn {
+        position: relative;
+        margin-top: 0px;
+        z-index: 1;
+    }
+    .submit-btn input{
+        margin-left: 6px;
+    }
+}

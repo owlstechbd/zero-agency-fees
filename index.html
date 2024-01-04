@@ -25,7 +25,16 @@
 <section id="navbar">
 	<nav class="navbar navbar-expand-lg">
 		<div class="container">
-		  <a class="navbar-brand" href="#">MadeForLandlords.com </a>
+			<img src="images/logo1.svg" alt="" id="logo">
+
+			<span id="brandname">
+				<p id="navbar-brand">Made For</p>
+				<p id="landlords">Landlords<span id="navbar-brand" >.com</span> </p>
+			</span>
+
+
+
+		  <!-- <a id="navbar-brand" href="#"> <span>MadeFor</span> <br> <span id="landlords">Landlords</span></a> -->
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
 		  </button>
@@ -34,81 +43,351 @@
 			  <li class="nav-item active">
 				<a class="nav-link " href="#header-cp">Welcome <span class="sr-only">(current)</span></a>
 			  </li>
+				<!-- <li class="nav-item">
+				<a class="nav-link" href="#about">Compare</a>
+				</li> -->
+				<!-- <li class="nav-item">
+					<a class="nav-link" href="#about">Landlords</a>
+				</li> -->
 			  <li class="nav-item">
-				<a class="nav-link" href="#about">Compar</a>
-			  </li>	
+				<a class="nav-link" href="#about">Testimonials</a>
+			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="#service">Landlords
-				</a>
-			  </li>	
-			  <li class="nav-item">
-				<a class="nav-link" href="#service">Problem
-				</a>
-			  </li>	
-			  <li class="nav-item">
-				<a class="nav-link" href="#service">Benefits
-					
-				</a>
-			  </li>	
-			  
-			  <li class="nav-item">
-				<a class="nav-link" href="#service">How It Works</a>
-			  </li>	
-			  
-			  <li class="nav-item">
-				<a class="nav-link" href="#service">FAQs
-					
-				</a>
-			  </li>	
-			  
-			  
-			 	      
+				<a class="nav-link" href="#service">Benefits</a>
+			  </li>
+				<li class="nav-item">
+				<a class="nav-link" href="#service">The Process</a>
+				</li>
+				<!-- <li class="nav-item">
+				<a class="nav-link" href="#service">Contact</a>
+				</li> -->
+				<li class="nav-item">
+				<a class="nav-link" href="#service">Contact</a>
+				</li>
+
+			  <!-- <li class="nav-item button-menu">
+				<a class="nav-link" id="talk" href="#protfolio">Book A Call</a>
+			  </li> -->
+
 			</ul>
 		  </div>
 		</div> <!-- end container -->
-	</nav>			
+	</nav>
 </section>
+<!-- *******navbar-part-end****** -->
 <!-- *******navbar-part-end****** -->
 
 
-<section class="hero">
+<section class="hero" id="hero">
 	<div class="container">
 		<div class="row dis-flex">
-			<div class="col-md-6">
+			<div class="col-lg-6 col-md-12 col-sm-12">
 				<div class="hero-content">
 					<h1>The Exceptional
 						Property Management
 						Company</h1>
-					<ul>
-						<li><span>&#10003;</span> Zero Agency Fees</li>
-						<li><span>&#10003;</span> Zero Repair Costs</li>
-						<li><span>&#10003;</span> Zero Stress</li>
-					</ul>	
+					<div class="hero-lsit">
+						<div class="row">
+							<div class="col-md-6">
+								<ul>
+									<li><span>&#10003;</span> Zero Agency Fees</li>
+									<li><span>&#10003;</span> Zero Repair Costs</li>
+									<li><span>&#10003;</span> Zero Stress</li>
+									
+			
+								</ul>
+									
+							</div>
+							<div class="col-md-6">
+								<ul>
+									<li>
+										<span>&#10003;</span>
+										Full Management Service
+									</li>
+									<li>
+										<span>&#10003;</span>
+										Guaranteed Rent
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 					<div class="gobal-btn">
-						<a href="#"><img src="images/phone.png" alt=""> Book Your Free Call</a>
+						<button class="openPopup"><i class="fa-solid fa-phone"></i> Book Your Free Call</button>
 					</div>
 					<p>That's right. You'll never have to worry about repair costs, agency fees or void rental periods, because we guarantee you your monthly rent along with our extraordinary full-service property management.</p>
 
 				</div>
 			</div>
-			<div class="col-md-6">
-				<div class="hero-img fit-image">
-					<img src="images/hero-man.png" alt="">
+			<div class="col-lg-6 col-md-12 col-sm-12">
+				<div class="hero-img">
+					<img src="images/phone-wifi-2.png" alt="">
+					
+					<div class="price-calcluter">
+						<p id="current-time"></p>
+						<div class="slidecontainer">
+							<p id="questions">
+								Calculate<span class="bold"> the true cost</span> of using regular estate agencies:
+							</p>
+							<select class="dropdown" id="rentalValueDropdown">
+								<option value="" class="label">Property's Rental Value</option>
+							</select>
+							<select class="dropdown" id="saleValueDropdown">
+								<option value="" class="label">Property's Sale Value</option>
+							</select>
+							<div id="slider3">
+								<span class="slider-value-indicator"><span id="demo3"></span></span>
+								<input type="range" min="10" max="1000" value="10" class="slider" id="myRange3">
+								<p id="slider-text2">Value Of Your Time</p>
+							</div>
+							<img id="suprise" src="images/suprise.png" alt="">
+							<div class="submit-btn"><input type="submit" value="SHOW ME!"></div>
+
+
+
+						</div>
+
+
+
+						<script>
+							function updateSliderValue(slider, output, format) {
+								let formattedValue = formatNumberWithSuffix(slider.value);
+								if (format === 'hr') {
+									formattedValue = '£' + formattedValue + '/hr';
+								} else {
+									formattedValue = '£' + formattedValue;
+								}
+								output.innerHTML = formattedValue;
+
+								const percent = (slider.value - slider.min) / (slider.max - slider.min) * 100;
+								const offset = -0.58 * percent + 3;  // Adjust as needed
+								output.parentElement.style.left = `calc(${percent}% + (${offset}px))`;
+							}
+
+							function formatNumberWithSuffix(number) {
+								if (number >= 1000) {
+									return removeTrailingZero((number / 1000).toFixed(1)) + 'K';
+								}
+								return formatNumberWithCommas(number);
+							}
+
+							function removeTrailingZero(value) {
+								return value.replace(/\.0$/, '');
+							}
+
+							function formatNumberWithCommas(number) {
+								return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+							}
+
+							// Initialize the "Value of Your Time" slider
+							var slider3 = document.getElementById("myRange3");
+							var output3 = document.getElementById("demo3");
+							updateSliderValue(slider3, output3, 'hr'); // Set initial value
+
+							slider3.oninput = function () {
+								updateSliderValue(this, output3, 'hr');
+							};
+						</script>
+		
+		
+		
+						
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="section-padding-medium">
+
+
+<div class="overlay" id="overlay">
+	<div id="popup" class="popup">
+		<div class="popup-content">
+			<span class="close"  onclick="togglePopup()">&times;</span>
+			
+			<!-- Step 1: Preferences -->
+			<div class="form-step active">
+				<h3>Your Preferences</h3>
+				<label class="pop-up-title">When would you like to talk?</label><br>
+				<div class="popup-checkbox">
+					<input type="checkbox" id="asap_today" name="talk_time"  value="asap_today" required>
+					<label for="asap_today">ASAP Today</label>
+					<input type="checkbox" id="weekdays" name="talk_time" value="9-5_weekdays" required>
+					<label for="weekdays">9-5 pm Weekdays</label>
+					<input type="checkbox" id="weekends" name="talk_time" value="10-2_weekends" required>
+					<label for="weekends">10-2 pm Weekends</label>
+				</div>
+	
+				<label class="pop-up-title">How do you prefer to talk?</label><br>
+				<div class="popup-checkbox">
+					<input type="checkbox" id="call_me" name="talk_preference" value="call_me" required>
+					<label for="call_me">Call me</label>
+					<input type="checkbox" id="whatsapp" name="talk_preference" value="whatsapp" required>
+					<label for="whatsapp">WhatsApp messaging</label>
+				</div>
+	
+				<label class="pop-up-title">When would like us to start managing your property(s)?</label><br>
+				<div class="popup-checkbox">
+					<input type="radio" id="asap" name="start_time" value="asap" required>
+					<label for="asap">ASAP</label>
+					<input type="radio" id="within_3_months" name="start_time" value="within_3_months" required>
+					<label for="within_3_months">Within 3 months</label>
+					<input type="radio" id="after_3_months" name="start_time" value="after_3_months" required>
+					<label for="after_3_months">After 3 months</label>
+				</div>
+	
+				<label class="pop-up-title">What communication style would you prefer your property manager to have?</label><br>
+				<div class="popup-checkbox">
+					<input type="radio" id="direct" name="communication_style" value="direct" required>
+					<label for="direct">Direct & straight to business</label>
+					<input type="radio" id="balanced" name="communication_style" value="balanced" required>
+					<label for="balanced">Balanced & Flexible</label>
+					<input type="radio" id="dynamic" name="communication_style" value="dynamic" required>
+					<label for="dynamic">Dynamic & Friendly</label>
+				</div>
+			</div>
+	
+			<!-- Step 2: Contact Details -->
+			<div class="form-step form-step2">
+				<h3>Contact Details</h3>
+				<label>Title:</label>
+				<select name="title">
+					<option>Mr</option>
+					<option>Ms</option>
+					<option>Mrs</option>
+					<option>Dr</option>
+					<option>Prof</option>
+				</select><br>
+				<label>Full name:</label>
+				<input type="text" name="fullname" required>
+				<label>Telephone number:</label>
+				<input type="text" name="phone" required>
+				<label>Email:</label>
+				<input type="email" name="email" required>
+			</div>
+	
+			<!-- Step 3: Property Details -->
+			<div class="form-step form-step2">
+				<h3>Property Details</h3>
+				<label>What is the property’s expected rent per month?</label>
+				<input type="number" name="rent" required>
+				<label>What’s the property’s postcode?</label>
+				<input type="text" name="postcode" required>
+				<label>Share any other details:</label>
+				<textarea name="other_details"></textarea>
+			</div>
+	
+			<!-- Navigation Buttons -->
+			<div class="buttons">
+				<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+				<button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+			</div>
+		</div>
+	</div>
+</div>		
+
+
+
+
+
+
+<section class="section-padding-medium" id="compar">
 	<div class="container">
 		<div class="choose-box">
-			<h2>Choose Your Debit Amount:</h2>
+			<h2>Why Landlords Choose MadeFor<span>Landlords</span>
+			</h2>
+
+			<table class="comparison-table">
+				<tr>
+				  <th></th> <!-- Blank cell in the top row -->
+					  <th>Do It <br>Yourself</th>
+				  <th>Estate <br>Agents</th>
+					  <th>Made For <br><span id="mdf2">Landlords</span></th>
+				</tr>
+				<tr>
+				  <td>Zero agency fees & zero work</td>
+					  <td class="crossmark">✗</td>
+					  <td class="crossmark">✗</td>
+					  <td class="checkmark">✓</td>
+				</tr>
+				  <tr>
+					  <td>Zero void/no-rent periods</td>
+					  <td class="crossmark">✗</td>
+					  <td class="crossmark">✗</td>
+					  <td class="checkmark">✓</td>
+				  </tr>
+				<tr>
+				  <td>Zero repair costs</td>
+					  <td class="crossmark">✗</td>
+					  <td class="crossmark">✗</td>
+					  <td class="checkmark">✓</td>
+				</tr>
+				<tr>
+				  <td>Zero check-in fees/work</td>
+					  <td class="crossmark">✗</td>
+					  <td class="crossmark">✗</td>
+					  <td class="checkmark">✓</td>
+				</tr>
+				<tr>
+				  <td>Zero check-out fees/work</td>
+					  <td class="crossmark">✗</td>
+					  <td class="crossmark">✗</td>
+					  <td class="checkmark">✓</td>
+				</tr>
+				<tr>
+				  <td>Zero photographer fees/work</td>
+					  <td class="crossmark">✗</td>
+					  <td class="crossmark">✗</td>
+					  <td class="checkmark">✓</td>
+				</tr>
+				  <tr>
+					  <td>Zero contract renewal fees/work</td>
+					  <td class="crossmark">✗</td>
+					  <td class="crossmark">✗</td>
+					  <td class="checkmark">✓</td>
+				  </tr>
+				  <tr>
+					  <td>Zero admin fees/work</td>
+					  <td class="crossmark">✗</td>
+					  <td class="crossmark">✗</td>
+					  <td class="checkmark">✓</td>
+				  </tr>
+				  <tr>
+					  <td>Zero legal and eviction fees</td>
+					  <td class="crossmark">✗</td>
+					  <td class="crossmark">✗</td>
+					  <td class="checkmark">✓</td>
+				  </tr>
+				  <tr>
+					  <td>Dedicated account manager</td>
+					  <td class="crossmark">✗</td>
+					  <td class="crossmark">✗</td>
+					  <td class="checkmark">✓</td>
+				  </tr>
+				  <tr>
+					  <td>Steady guaranteed monthly rent</td>
+					  <td class="crossmark">✗</td>
+					  <td class="crossmark">✗</td>
+					  <td class="checkmark">✓</td>
+				  </tr>
+				  <tr>
+					  <td>Zero stress</td>
+					  <td class="crossmark">✗</td>
+					  <td class="crossmark">✗</td>
+					  <td class="checkmark">✓</td>
+				  </tr>
+			  </table>
+
+			<p>That's right. You'll never have to worry about repair costs, agency fees or void rental periods, because we guarantee you your monthly rent along with our extraordinary full management service.</p>  
+			<div class="gobal-btn left-btn">
+				<button class="openPopup"><i class="fa-solid fa-phone"></i> Book Your Free Call</button>
+			</div>
 		</div>
 	</div>
 </section>
 
-<section class="section-padding-medium">
+<section class="section-padding-medium" id="landlords">
 	<div class="container">
 		<div class="center-title">
 			<h2>And that’s why <span>landlords choose</span> us</h2>
@@ -170,16 +449,16 @@
 					</div>
 				</div>
 				<div class="col-md-5">
-					<div class="gobal-btn left-button">
-						<a href="#"><img src="images/phone.png" alt=""> Book Your Free Call</a>
-					</div>
+					<div class="gobal-btn">
+				<button class="openPopup"><i class="fa-solid fa-phone"></i> Book Your Free Call</button>
+			</div>
 				</div>
 			</div>
 		</div><!-- logo-bottom -->
 	</div>
 </section>
 
-<section class="section-padding">
+<section class="section-padding" id="problem">
 	<div class="container">
 		<div class="center-title">
 			<h2>Why conventional <span>agencies<br> struggle</span> to put you first.</h2>
@@ -189,44 +468,55 @@
 		<div class="row dis-center">
 			<div class="col-lg-4 col-md-6 col-sm-12">
 				<div class="icon-box">
-					<img src="images/icon1.png" alt="">
+					<div class="icon-box-img">
+						<img src="images/deal.png" alt="">
+					</div>
 					<h4>Missed rent</h4>
 					<p>Too many estate agents priorities the search for new landlords instead of the search for new tenants. As long as client acquisitions are the priority, this will never change.</p>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-12">
 				<div class="icon-box">
-					<img src="images/icon1.png" alt="">
+					<div class="icon-box-img">
+						<img src="images/deal.png" alt="">
+					</div>
 					<h4>Missed rent</h4>
 					<p>Too many estate agents priorities the search for new landlords instead of the search for new tenants. As long as client acquisitions are the priority, this will never change.</p>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-12">
 				<div class="icon-box">
-					<img src="images/icon1.png" alt="">
+					<div class="icon-box-img">
+						<img src="images/deal.png" alt="">
+					</div>
 					<h4>Missed rent</h4>
 					<p>Too many estate agents priorities the search for new landlords instead of the search for new tenants. As long as client acquisitions are the priority, this will never change.</p>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-12">
 				<div class="icon-box">
-					<img src="images/icon1.png" alt="">
+					<div class="icon-box-img">
+						<img src="images/deal.png" alt="">
+					</div>
 					<h4>Missed rent</h4>
 					<p>Too many estate agents priorities the search for new landlords instead of the search for new tenants. As long as client acquisitions are the priority, this will never change.</p>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-12">
 				<div class="icon-box">
-					<img src="images/icon1.png" alt="">
+					<div class="icon-box-img">
+						<img src="images/deal.png" alt="">
+					</div>
 					<h4>Missed rent</h4>
 					<p>Too many estate agents priorities the search for new landlords instead of the search for new tenants. As long as client acquisitions are the priority, this will never change.</p>
 				</div>
 			</div>
+			
 		</div>
 	</div>
 </section>
 
-<section class="section-padding">
+<section class="section-padding" id="benefits">
 	<div class="container">
 		<div class="row dis-flex">
 			<div class="col-lg-6 col-md-12 col-sm-12">
@@ -238,7 +528,7 @@
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-12 col-sm-12">
-				<div class="fit-image">
+				<div class="poperty-image">
 					<img src="images/property.png" alt="">
 				</div>
 			</div>
@@ -248,44 +538,60 @@
 <section class="section-padding-medium">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-4 col-md-6 col-sm-12">
+			<div class="col-lg-4 col-md-6 col-sm-12 mar-bottom">
 				<div class="white-icon-box">
-					<img src="images/property-icon.png" alt="">
+					<div class="w-icon-img">
+						<img src="images/money.png" alt="">
+					</div>
 					<h4>Zero Maintenance Fees</h4>
 					<p>We’ll take care of everything, including paying the bills.</p>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12">
+			<div class="col-lg-4 col-md-6 col-sm-12 mar-bottom">
 				<div class="white-icon-box">
-					<img src="images/property-icon.png" alt="">
+					<div class="w-icon-img">
+						<img src="images/rent.png" alt="">
+					</div>
 					<h4>Bulk Rental Payments</h4>
 					<p>We can pay you 3, 6 or 12 months of rent in advance.</p>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12">
+			<div class="col-lg-4 col-md-6 col-sm-12 mar-bottom">
 				<div class="white-icon-box">
-					<img src="images/property-icon.png" alt="">
+					<div class="w-icon-img">
+						<img src="images/corporation.png" alt="">
+					</div>
+					
 					<h4>Zero Agency Fees</h4>
 					<p>You’ll never pay estate agent fees when you’re with us.</p>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12">
+			<div class="col-lg-4 col-md-6 col-sm-12 mar-bottom">
 				<div class="white-icon-box">
-					<img src="images/property-icon.png" alt="">
+					<div class="w-icon-img">
+						<img src="images/guarantee-certificate.png" alt="">
+					</div>
+					
 					<h4>Guaranteed Rent</h4>
 					<p>You will receive the rent for your property whether it’s occupied or not.</p>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12">
+			<div class="col-lg-4 col-md-6 col-sm-12 mar-bottom">
 				<div class="white-icon-box">
-					<img src="images/property-icon.png" alt="">
+					<div class="w-icon-img">
+						<img src="images/brain.png" alt="">
+					</div>
+					
 					<h4>Zero stress</h4>
 					<p>Say goodbye to the stress and expense associated with property repairs.</p>
 				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12">
+			</div> 
+			<div class="col-lg-4 col-md-6 col-sm-12 mar-bottom">
 				<div class="white-icon-box">
-					<img src="images/property-icon.png" alt="">
+					<div class="w-icon-img">
+						<img src="images/accountant.png" alt="">
+					</div>
+					
 					<h4>Account Manager</h4>
 					<p>Our dedicated account managers maintain a longer-term vision of your needs and property.</p>
 				</div>
@@ -294,6 +600,236 @@
 		</div>
 	</div>
 </section>
+
+<section class="section-padding"  id="work">
+	<div class="process">
+		<div class="center-title">
+			<h2>Our <span>Process</span></h2>
+			<p>We keep things simple, so all you need to do is wait for your rent payment each month. Our three-step process makes sure of that!</p>
+		</div>
+		<div class="process-box">
+			<div class="step-box">
+				<img src="images/step-icon.png" alt=""><br>
+				<h4>Step - 1</h4>
+				<h3>Consultation</h3>
+				<p>Contact us to arrange a consultation with an account manager in your property. This is your chance to find out more about our approach to property letting and discuss issues such as rent.</p>
+			</div>
+			<div class="step-box">
+				<img src="images/step-icon.png" alt=""><br>
+				<h4>Step - 2</h4>
+				<h3>Trial</h3>
+				<p>If you’re happy with the rent being offered and our approach to zero-fee, zero-hassle property lettings, we will set up a short, no-obligation trial — giving you the chance to see how things work.</p>
+			</div>
+			<div class="step-box">
+				<img src="images/step-icon.png" alt=""><br>
+				<h4>Step - 3</h4>
+				<h3>Sign Up</h3>
+				<p>Once we’ve both had the chance to understand one another’s expectations — and the particulars of the property — we will formally offer you a guaranteed, zero-fee monthly rent.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="faq" id="faq">
+	<div class="container">
+		<div class="center-title">
+			<h2>Frequently Asked <span>Questions</span></h2>
+
+		</div>
+		<div class="faq-content">
+			<div id="accordion3">
+				<!-- FAQ Item 1 -->
+				<div class="card">
+					<div class="card-header active-faq" id="headingOne2" data-toggle="collapse" data-target="#collapseOne2"
+						aria-expanded="true" aria-controls="collapseOne2">
+						<h5 class="mb-0">
+							Who is responsible for major repairs to the property?
+							<i class="fas fa-minus"></i>
+						</h5>
+					</div>
+	
+					<div id="collapseOne2" class="collapse  show" aria-labelledby="headingOne2" data-parent="#accordion3">
+						<div class="card-body">
+							<p>If we have signed an agreement with you, your dedicated account manager will organise the repairs and cover all the costs. You don’t have to pay a penny.</p>
+						</div>
+					</div>
+				</div>
+				<!-- FAQ Item 1 -->
+				<div class="card">
+					<div class="card-header " id="headingOne2" data-toggle="collapse" data-target="#collapseOne2"
+						aria-expanded="true" aria-controls="collapseOne2">
+						<h5 class="mb-0">
+							Do you really not charge estate agency fees?
+							<i class="fas fa-plus"></i>
+						</h5>
+					</div>
+	
+					<div id="collapseOne2" class="collapse " aria-labelledby="headingOne2" data-parent="#accordion3">
+						<div class="card-body">
+						   <p>Balash is financed through ads that are printed directly onto eco-friendly aluminum cans and paper cartons. A portion of the revenue from each bottle is also donated to charity.
+
+						   </p>
+						</div>
+					</div>
+				</div>
+
+				
+				<!-- FAQ Item 1 -->
+				<div class="card">
+					<div class="card-header" id="headingOne3" data-toggle="collapse" data-target="#collapseOne3"
+						aria-expanded="true" aria-controls="collapseOne3">
+						<h5 class="mb-0">
+							Will I get paid rent if the tenant doesn’t pay or the property is empty?
+							<i class="fas fa-plus"></i>
+						</h5>
+					</div>
+	
+					<div id="collapseOne3" class="collapse " aria-labelledby="headingOne3" data-parent="#accordion3">
+						<div class="card-body">
+							<p>No, as an early-stage startup, shipping small quantities over long distances is neither
+								cost-effective nor eco-friendly. However, we are currently shipping large B2B orders to
+								advertisers and distributors.</p>
+						</div>
+					</div>
+				</div>
+				<!-- FAQ Item 1 -->
+				<div class="card">
+					<div class="card-header" id="headingOne4" data-toggle="collapse" data-target="#collapseOne4"
+						aria-expanded="true" aria-controls="collapseOne2">
+						<h5 class="mb-0">
+							Are you guys experienced property professionals?
+							<i class="fas fa-plus"></i>
+						</h5>
+					</div>
+	
+					<div id="collapseOne4" class="collapse " aria-labelledby="headingOne4" data-parent="#accordion3">
+						<div class="card-body">
+							<p>No, as an early-stage startup, shipping small quantities over long distances is neither
+								cost-effective nor eco-friendly. However, we are currently shipping large B2B orders to
+								advertisers and distributors.</p>
+						</div>
+					</div>
+				</div>
+	
+				<!-- Add more FAQ items as needed for Section 2 -->
+
+				<!-- FAQ Item 1 -->
+				<div class="card">
+					<div class="card-header" id="headingOne5" data-toggle="collapse" data-target="#collapseOne5"
+						aria-expanded="true" aria-controls="collapseOne2">
+						<h5 class="mb-0">
+							What will my account manager do for me?
+							<i class="fas fa-plus"></i>
+						</h5>
+					</div>
+	
+					<div id="collapseOne5" class="collapse " aria-labelledby="headingOne5" data-parent="#accordion3">
+						<div class="card-body">
+							<p>No, as an early-stage startup, shipping small quantities over long distances is neither
+								cost-effective nor eco-friendly. However, we are currently shipping large B2B orders to
+								advertisers and distributors.</p>
+						</div>
+					</div>
+				</div>
+	
+				<!-- Add more FAQ items as needed for Section 2 -->
+				<!-- FAQ Item 1 -->
+				<div class="card">
+					<div class="card-header" id="headingOne6" data-toggle="collapse" data-target="#collapseOne6"
+						aria-expanded="true" aria-controls="collapseOne2">
+						<h5 class="mb-0">
+							Can I request a review of my monthly rent?
+							<i class="fas fa-plus"></i>
+						</h5>
+					</div>
+	
+					<div id="collapseOne6" class="collapse " aria-labelledby="headingOne6" data-parent="#accordion3">
+						<div class="card-body">
+							<p>No, as an early-stage startup, shipping small quantities over long distances is neither
+								cost-effective nor eco-friendly. However, we are currently shipping large B2B orders to
+								advertisers and distributors.</p>
+						</div>
+					</div>
+				</div>
+	
+				<!-- Add more FAQ items as needed for Section 2 -->
+				<!-- FAQ Item 1 -->
+				<div class="card">
+					<div class="card-header" id="headingOne7" data-toggle="collapse" data-target="#collapseOne7"
+						aria-expanded="true" aria-controls="collapseOne2">
+						<h5 class="mb-0">
+							Where do you offer property management services ?
+							<i class="fas fa-plus"></i>
+						</h5>
+					</div>
+	
+					<div id="collapseOne7" class="collapse " aria-labelledby="headingOne7" data-parent="#accordion3">
+						<div class="card-body">
+							<p>No, as an early-stage startup, shipping small quantities over long distances is neither
+								cost-effective nor eco-friendly. However, we are currently shipping large B2B orders to
+								advertisers and distributors.</p>
+						</div>
+					</div>
+				</div>
+	
+				<!-- Add more FAQ items as needed for Section 2 -->
+	
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="cal-to-action">
+	<div class="container">
+		<div class="call-box">
+			<h2>A Guaranteed <span>Rental Income</span> Awaits</h2>
+			<p>If you’re sick and tired of unreliable tenants, sky-high letting agency fees, costly property repairs, and missed rent payments, your peace of mind is just a simple message away</p>
+			<p>Complete the contact form below and one of our letting specialists will get back to you to discuss an easier, more reliable way to generate an income from your property.</p>
+			<div class="gobal-btn learn-btn">
+				<a href="#">Learn More</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer>
+
+	<div class="footer-bottom">
+		<div class="footer-container">
+			<div class="row dis-flex">
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<div class="footer-bottom-box">
+						<img src="images/logo.png" alt="">
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="footer-bottom-box">
+						<ul>
+							<li>Home</li>
+							<li>Property</li>
+							<li>Page</li>
+							<li>Blog</li>
+							<li>Contact</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<div class="footer-bottom-box">
+						<ul>
+							<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<p class="copy">Copyright © 2023  | Designed & Developed.</p>
+</footer>
 
 	
 	
@@ -306,5 +842,75 @@
     <script src="js/wow.min.js"></script>
 	<!-- main.js -->
 	<script src="js/main.js"></script>
+	<script>
+		// Function to add options to select elements
+		function addOption(selectElement, value, text) {
+			var option = document.createElement("option");
+			option.value = value;
+			option.textContent = text;
+			selectElement.appendChild(option);
+		}
+	
+		// Populate the rental value dropdown
+		var rentalSelect = document.getElementById('rentalValueDropdown');
+		for (var i = 500; i <= 10000; i += 100) {
+			var rentalText = '£' + i.toLocaleString() + ' per month';
+			addOption(rentalSelect, i, rentalText);
+		}
+	
+		// Populate the sale value dropdown
+		var saleSelect = document.getElementById('saleValueDropdown');
+		for (var j = 150000; j <= 10000000; j += 25000) {
+			var saleText = '£' + j.toLocaleString();
+			addOption(saleSelect, j, saleText);
+		}
+	
+		// Function to update slider values
+		function updateSliderValue(slider, output, format) {
+			let formattedValue = formatNumberWithSuffix(slider.value);
+			formattedValue = format === 'hr' ? '£' + formattedValue + '/hr' : '£' + formattedValue;
+			output.innerHTML = formattedValue;
+	
+			const percent = (slider.value - slider.min) / (slider.max - slider.min) * 100;
+			const offset = -0.58 * percent + 3; // Adjust as needed
+			output.parentElement.style.left = 'calc(' + percent + '% + (' + offset + 'px))';
+		}
+	
+		// Additional helper functions
+		function formatNumberWithSuffix(number) {
+			return number >= 1000 ? removeTrailingZero((number / 1000).toFixed(1)) + 'K' : formatNumberWithCommas(number);
+		}
+	
+		function removeTrailingZero(value) {
+			return value.replace(/\.0$/, '');
+		}
+	
+		function formatNumberWithCommas(number) {
+			return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		}
+	
+		// Initialize slider
+		var slider3 = document.getElementById("myRange3");
+		var output3 = document.getElementById("demo3");
+		updateSliderValue(slider3, output3, 'hr'); // Set initial value
+	
+		slider3.oninput = function() {
+			updateSliderValue(this, output3, 'hr');
+		};
+	
+		// Handle form submission
+	  document.getElementById('priceCalculatorForm').addEventListener('submit', function(event) {
+		  event.preventDefault();
+		  var rentalValue = parseFloat(document.getElementById('rentalValueDropdown').value);
+		  var saleValue = parseFloat(document.getElementById('saleValueDropdown').value);
+		  var timeValue = parseFloat(document.getElementById('myRange3').value);
+	
+		  // Perform calculation
+		  var result = (rentalValue * 0.12) + (saleValue * 0.025) + (timeValue * 28);
+	
+		  // Display result
+		  document.querySelector('.price-calculator').innerHTML = `<div id="calculationResult">Calculated Cost: £${result.toFixed(2)}</div>`;
+	  });
+	</script>
 </body>
 </html>
