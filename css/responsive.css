@@ -145,6 +145,22 @@
     .poperty-image img{
         width: 100%;
     }
+    #landlords{
+        font-size: 25px;
+    }
+    #navbar-brand{
+        font-size: 28px;
+    }
+    #logo {
+        width: 50px;
+        margin-right: -14px;
+        margin-bottom: 8px;
+        margin-top: 7px;
+    }
+    span#brandname {
+        margin-left: -24px;
+        margin-top: 10px;
+    }
 
 }
 
@@ -197,6 +213,7 @@
         transition: .6s;
         border-radius: 4px;
     }
+    
 }
 
 @media (min-width: 300px) and (max-width: 390px){
@@ -205,7 +222,7 @@
         width: 179px;
         height: 501px;
         top: 27px;
-        left: 61px;
+        left: 64px;
     }
     .dropdown {
         width: 90%;
@@ -239,5 +256,12 @@
     }
     .submit-btn input{
         margin-left: 6px;
+    }
+    .hero-img img {
+        width: 109%;
+        position: relative;
+    }
+    .hero{
+        overflow: hidden;
     }
 }
