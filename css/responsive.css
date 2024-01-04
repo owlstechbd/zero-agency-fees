@@ -164,7 +164,7 @@
 
 }
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 530px){
     #questions {
         font-size: 14px;
         font-weight: 300;
@@ -212,6 +212,13 @@
         margin-left: 18px;
         transition: .6s;
         border-radius: 4px;
+    }
+    .hero-img img {
+        width: 109%;
+        position: relative;
+    }
+    .hero{
+        overflow: hidden;
     }
     
 }
