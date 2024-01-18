@@ -86,7 +86,7 @@ p{
 #navbar{
 	position: fixed;
 	width: 100%;
-	z-index: 1;
+	z-index: 99999;
 }
 .navbar{
 	background:#0e013b;
@@ -304,13 +304,7 @@ p{
 	cursor: pointer;
   }
   
-  .slidecontainer span {
-	/* display: inline-block; /* This makes the span align inline while still allowing width, margin, padding, etc. */ */
-	/* If you need to specify a width, you can do so here. */
-	/* margin-right: 10px; /* Adjust or remove margin as needed for spacing between spans */ */
-	/* vertical-align: top; /* This aligns the spans to the top if they have different heights. */ */
-	/* Other styles as needed */
-  }
+
   
   .single-slider{
   padding-bottom: 20px;
@@ -696,6 +690,11 @@ p{
 .card-header{
 	border: none!important;
 	background: transparent!important;
+	transition: .6s!important;
+}
+.card-header:hover{
+	background: #150E41!important;
+	box-shadow: 0px 16px 40px 0px rgba(19, 34, 56, 0.08)!important;
 }
 .card h5{
 	color: #fff;
@@ -923,19 +922,21 @@ footer{
 .footer-bottom{
 	width: 100%;
 	margin: 20px 0;
-	border-top: 1px #ffffff37 solid;
-	border-bottom: 1px #ffffff37 solid;
+	
 	padding: 20px 0;
 }
 .br-none{
 	border: none;
 }
 .footer-bottom-box{
-	text-align: center;
+	text-align: right;
+}
+.socail{
+	margin-top: 30px;
 }
 .footer-bottom-box ul{
 	display: flex;
-	justify-content: center;
+	justify-content: right;
 }
 .footer-bottom-box ul li{
 	padding: 0 20px;
@@ -945,6 +946,6 @@ footer{
 	color: #fff;
 }
 .copy{
-	padding-top: 20px;
-	text-align: center;
+	
+	text-align: right;
 }

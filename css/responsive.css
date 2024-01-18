@@ -60,10 +60,10 @@
 @media screen and (max-width: 767px){
     .price-calcluter {
         position: absolute;
-        width: 165px;
+        width: 220px;
         height: 501px;
         top: 31px;
-        left: 69px;
+        left: 93px;
     }
     .slidecontainer {
         width: 100%;
@@ -71,6 +71,15 @@
     }
     .slidecontainer p{
         font-size: 13px;
+    }
+    #current-time{
+        margin-top: 15px;
+    }
+    .dropdown{
+        margin-bottom: 5px;
+    }
+    #suprise{
+        margin-top: -15px;
     }
 }
 @media screen and (max-width: 720px){
@@ -86,7 +95,36 @@
         width: 70%;
     }
     .choose-box{
+        width: 100%;
         padding: 0;
+    }
+    .mobile-padd{
+        padding: 20px;
+    }
+    .gobal-btn.left-btn {
+        text-align: center;
+    }
+    .logo-partner ul{
+        flex-wrap: wrap;
+    }
+    section.section-padding-medium {
+        padding-bottom: 0;
+    }
+    .logo-partner ul li{
+        width: 43%;
+    }
+    .logo-partner ul li img{
+        width: 80%;
+    }
+    .gobal-btn {
+        margin: 30px 0;
+        text-align: center;
+    }
+    .choose-box h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 50px;
+        padding: 20px;
     }
     .logo-partner ul{
         flex-wrap: wrap;
@@ -133,8 +171,20 @@
     .footer-list {
         padding-left: 0;
     }
+    .footer-bottom-box ul {
+        display: flex;
+        justify-content: center;
+    }
     .footer-bottom-box ul{
         flex-wrap: wrap;
+    }
+    .footer-bottom-logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .socail {
+        margin-top: 18px;
     }
     .footer-bottom-box ul li{
         padding: 10px 20px;
@@ -164,7 +214,7 @@
 
 }
 
-@media screen and (max-width: 530px){
+@media (min-width: 519px) and (max-width: 530px){
     #questions {
         font-size: 14px;
         font-weight: 300;
@@ -181,10 +231,10 @@
     }
     .price-calcluter {
         position: absolute;
-        width: 179px;
+        width: 244px;
         height: 501px;
-        top: 31px;
-        left: 69px;
+        top: 39px;
+        left: 95px;
     }
     .dropdown {
         width: 100%;
@@ -222,25 +272,121 @@
     }
     
 }
-
-@media (min-width: 300px) and (max-width: 390px){
+@media (min-width: 457px) and (max-width: 518px){
+    #questions{
+        margin-bottom: 5px;
+    }
     .price-calcluter {
         position: absolute;
-        width: 179px;
+        width: 40%;
         height: 501px;
-        top: 27px;
-        left: 64px;
+        top: 31px;
+        left: 16%;
+    }
+    #suprise {
+        margin-top: -15px;
+        display: none;
+    }
+    .submit-btn {
+        position: relative;
+        margin-top: 0px;
+        z-index: 1;
+    }
+    .submit-btn input{
+        margin-left: 13%;
+    }
+}
+
+@media (min-width: 391px) and (max-width: 456px){
+    #questions {
+        margin-bottom: 5px;
+        margin-top: -10px;
+    }
+    .price-calcluter {
+        position: absolute;
+        width: 43%;
+        height: 501px;
+        top: 4%;
+        left: 16%;
+    }
+    #suprise {
+        margin-top: -15px;
+        display: none;
+    }
+    .submit-btn {
+        position: relative;
+        margin-top: 0px;
+        z-index: 1;
+    }
+    .submit-btn input{
+        margin-left: 13%;
+    }
+}
+@media (min-width: 350px) and (max-width: 390px){
+    #questions {
+        margin-bottom: 5px;
+        margin-top: -20px;
+    }
+    .price-calcluter {
+        position: absolute;
+        width: 43%;
+        height: 501px;
+        top: 4%;
+        left: 16%;
+    }
+    #suprise {
+        margin-top: -15px;
+        display: none;
+    }
+    .submit-btn {
+        position: relative;
+        margin-top: 0px;
+        z-index: 1;
+    }
+    .submit-btn input{
+        margin-left: 13%;
+    }
+}
+@media (min-width: 366px) and (max-width: 390px){
+    
+    #questions {
+        margin-bottom: 5px;
+        margin-top: -20px;
+        font-size: 14px;
+    }
+    .price-calcluter {
+        position: absolute;
+        width: 46%;
+        height: 501px;
+        top: 4%;
+        left: 17%;
+    }
+    #current-time {
+        margin-top: 14px;
+        font-size: 9px;
+    }
+    #suprise {
+        margin-top: -15px;
+        display: none;
     }
     .dropdown {
-        width: 90%;
-        font-family: 'Gill Sans Nova';
-        font-weight: 300;
-        font-size: 14px;
-        margin-bottom: 8px;
-        background-color: gainsboro;
-        border-color: gainsboro;
-        padding: 4px;
-        border-radius: 6px;
+        font-size: 13px;
+    }
+    .price-calcluter {
+        position: absolute;
+        width: 46%;
+        height: 501px;
+        top: 4%;
+        left: 18%;
+    }
+    #current-time {
+        margin-left: 10px;
+        background: #81C488;
+        display: inline-block;
+        color: #fff;
+        padding: 1px 10px;
+        border-radius: 25px;
+        font-size: 12px;
     }
     .slider {
         -webkit-appearance: none;
@@ -253,8 +399,41 @@
         -webkit-transition: .2s;
         transition: opacity .2s;
     }
+    
+    .hero-img img {
+        width: 109%;
+        position: relative;
+    }
+    .hero{
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 366px){
+    #questions {
+        margin-bottom: 5px;
+        margin-top: -20px;
+        font-size: 14px;
+    }
+    .price-calcluter {
+        position: absolute;
+        width: 45%;
+        height: 501px;
+        top: 4%;
+        left: 18%;
+    }
+    .dropdown {
+        font-size: 13px;
+    }
     #suprise {
+        margin-top: -15px;
         display: none;
+    }
+    .dropdown {
+        width: 90%;
+    }
+    .slider{
+        width: 90%;
     }
     .submit-btn {
         position: relative;
@@ -262,13 +441,6 @@
         z-index: 1;
     }
     .submit-btn input{
-        margin-left: 6px;
-    }
-    .hero-img img {
-        width: 109%;
-        position: relative;
-    }
-    .hero{
-        overflow: hidden;
+        margin-left: 6%;
     }
 }
