@@ -15,6 +15,16 @@
         width: 28%;
     }
 }
+@media (min-width: 992px) and (max-width: 1199px){
+    .submit-btn {
+        position: relative;
+        margin-top: -5px;
+        z-index: 1;
+    }
+    .submit-btn input{
+        margin-left: 22px;
+    }
+}
 @media (min-width: 721px) and (max-width: 1199px){
     .process-box{
         flex-direction: column;
@@ -26,10 +36,21 @@
     .step-box::after{
         display: none;
     }
+    #suprise {
+        margin-left: 42px;
+        margin-top: -1px;
+        width: 155px;
+        z-index: 1;
+        display: none;
+    }
+    .testmonail-image img{
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px){
-    .price-calcluter {
+    .price-calculator {
         position: absolute;
         width: 195px;
         height: 501px;
@@ -44,8 +65,15 @@
         width: 100%;
     }
 }
+@media (min-width: 721px) and (max-width: 989px){
+    .submit-btn{
+        margin-top:30px;
+        
+        margin-left: 0;
+    }
+}
 @media (min-width: 768px) and (max-width: 991px){
-    .price-calcluter {
+    .price-calculator {
         position: absolute;
         width: 289px;
         height: 501px;
@@ -57,8 +85,9 @@
         padding: 150px 10px 20px;
     }
 }
+
 @media screen and (max-width: 767px){
-    .price-calcluter {
+    .price-calculator {
         position: absolute;
         width: 220px;
         height: 501px;
@@ -84,9 +113,16 @@
 }
 @media screen and (max-width: 720px){
 
-
+    div#calculationResult {
+        position: absolute;
+        top: 30%;
+        left: 11px;
+    }
     .for-desktop{
         display: none;
+    }
+    .copy {
+        text-align: center;
     }
     .for-mobile{
         display: block;
@@ -214,6 +250,15 @@
 
 }
 
+@media (min-width: 519px) and (max-width: 575px){
+    #suprise{
+        display: none;
+    }
+    .submit-btn{
+        margin-top: 30px;
+    }
+}
+
 @media (min-width: 519px) and (max-width: 530px){
     #questions {
         font-size: 14px;
@@ -229,7 +274,7 @@
         border-radius: 25px;
         font-size: 10px;
     }
-    .price-calcluter {
+    .price-calculator {
         position: absolute;
         width: 244px;
         height: 501px;
@@ -276,7 +321,7 @@
     #questions{
         margin-bottom: 5px;
     }
-    .price-calcluter {
+    .price-calculator {
         position: absolute;
         width: 40%;
         height: 501px;
@@ -302,7 +347,7 @@
         margin-bottom: 5px;
         margin-top: -10px;
     }
-    .price-calcluter {
+    .price-calculator {
         position: absolute;
         width: 43%;
         height: 501px;
@@ -327,7 +372,7 @@
         margin-bottom: 5px;
         margin-top: -20px;
     }
-    .price-calcluter {
+    .price-calculator {
         position: absolute;
         width: 43%;
         height: 501px;
@@ -354,7 +399,7 @@
         margin-top: -20px;
         font-size: 14px;
     }
-    .price-calcluter {
+    .price-calculator {
         position: absolute;
         width: 46%;
         height: 501px;
@@ -372,7 +417,7 @@
     .dropdown {
         font-size: 13px;
     }
-    .price-calcluter {
+    .price-calculator {
         position: absolute;
         width: 46%;
         height: 501px;
@@ -415,7 +460,7 @@
         margin-top: -20px;
         font-size: 14px;
     }
-    .price-calcluter {
+    .price-calculator {
         position: absolute;
         width: 45%;
         height: 501px;
@@ -442,5 +487,21 @@
     }
     .submit-btn input{
         margin-left: 6%;
+    }
+
+    #current-time {
+        margin-left: 5px;
+        background: #81C488;
+        display: inline-block;
+        color: #fff;
+        padding: 1px 7px;
+        border-radius: 25px;
+        font-size: 11px;
+    }
+    #current-time {
+        margin-top: 11px;
+    }
+    .submit-btn input {
+        margin-left: -1%;
     }
 }

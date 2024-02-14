@@ -1,0 +1,15 @@
+@media screen and (max-width: 720px){
+
+
+    .for-desktop{
+        display: none;
+    }
+    .for-mobile{
+        display: block;
+    }
+    .geeks img{
+        width: 70%;
+    }
+
+}
+
